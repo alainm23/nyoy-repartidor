@@ -1,0 +1,160 @@
+@font-face{
+  font-family: HelveticaNeueRegular;
+  src : url('/assets/font/HelveticaNeue-Regular.ttf')
+}
+@font-face{
+  font-family: AvenirBlack;
+  src : url('/assets/font/Avenir-Black.otf')
+}
+@font-face{
+  font-family: AvenirMedium;
+  src : url('/assets/font/Avenir-Medium.ttf')
+}
+@font-face{
+  font-family: AvenirBook;
+  src : url('/assets/font/Avenir Book.ttf')
+}
+ion-content
+{
+  --background: url('/assets/img/fondo.png') 0 0/100% 100% no-repeat;
+}
+ion-menu-button
+{
+  color: #707070;
+}
+.btn_menu
+{
+  --background: transparent;
+  --background-activated: transparent;
+  --box-shadow: none;
+  margin-top: 0.9375rem;
+  margin-left: 85%;
+  width: 10%;
+  ion-icon
+  {
+      color: #707070;
+      font-size: 2.1875rem;
+  }
+}
+.p1
+{
+  font-size: 1.25rem;
+  font-weight: bolder;
+  font-family: HelveticaNeueRegular;
+  color: #969696;
+}
+.p2
+{
+  font-size: 1rem;
+  font-family: AvenirBook;
+  color: #969696;
+}
+.col_bajar
+{
+  margin-top: 1.875rem;
+}
+ion-card
+{
+  border-radius: 26px;
+  text-align: center;
+  box-shadow: 0px 2px 3px #0000005A;
+  .img_bajar
+  {
+      margin-top: 20px;
+  }
+  p
+  {
+      color: #707070;
+      font-family: AvenirBook;
+      font-size: 12px;
+      margin: 0rem;
+  }
+  p.p4_card
+  {
+      margin-top: 10px;
+  }
+}
+.col_bajar_noto
+{
+  margin-top: 30px;
+}
+ion-card.card_p_envio
+{
+  margin: 0px;
+  --background: #ffffff;
+  height: 59px;
+  padding-right: 60px;
+  width: 273px;
+  padding-left: 27px;
+  display: flex;
+  align-items: center;
+  .p_envio
+  {
+      font-family: AvenirMedium;
+      color: #868585;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1;
+  }
+}
+.img_moto
+{
+  position: absolute;
+  right: 0;
+  z-index: 9999;
+  top: 0;
+}
+.dv_img_restaurant
+{
+  width: 110px;
+  height: 100px;
+  display: inline-block;
+  .img_ob_cover
+  {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media(min-width: 768px)
+{
+  .btn_menu
+  {
+      ion-icon
+      {
+          font-size: 3.125rem;
+      }
+  }
+  .p1
+  {
+      font-size: 2.1875rem;
+  }
+  .p2
+  {
+      font-size: 1.5625rem;
+  }
+  ion-card
+  {
+      p
+      {
+          font-size: 15px;
+      }
+  }
+}
+
+.btn_listo
+{
+    --background:#7BED8D;
+    --background-activated:#7BED8D;
+    --border-radius: 26px;
+    font-family: HelveticaNeueRegular;
+    width: 100%;
+    --box-shadow: 0px 3px 6px #00000074;
+    height: 50px;
+    font-family: AvenirBlack;
+    --color: #ffffff; 
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 15px;
+}

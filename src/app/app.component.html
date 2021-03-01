@@ -1,0 +1,100 @@
+<ion-app>
+  <ion-menu side="start" menuId="first" type="overlay" contentId="content1">
+    <ion-content>
+      <ion-grid class="">
+        <ion-row class="ion-justify-content-center">
+          <ion-col size="11" class="ion-no-padding">
+            <ion-icon name="close-outline" auto-hide="false" (click)="open_menu ()" class="close_menu"></ion-icon>
+          </ion-col>
+          <ion-col size="10" size-sm="7" size-md="10" size-lg="11" class="ion-text-center">
+            <img src="assets/img/Componente61.png" class="img_menu">
+          </ion-col>
+          <ion-col size="10" size-sm="7" size-md="10" size-lg="11">
+            <ion-card class="card_menu ion-text-center">
+             <!-- <ion-thumbnail>
+              <img src="assets/img/156c78340fd4ecb1fd893dbd55e1b466.png">
+             </ion-thumbnail> -->
+              <p class="p_nombre">{{ auth?.usuario.nombre }}</p>
+            </ion-card>
+          </ion-col>
+          <!--<ion-col size="10" size-sm="7" size-md="10" size-lg="11">
+            <ion-card class="card_buscar">
+              <ion-searchbar placeholder="Buscar" mode="ios"></ion-searchbar>
+            </ion-card>
+          </ion-col>-->
+          <ion-col size="12" size-sm="7" size-md="10" size-lg="11" style="padding-left: 0px;">
+            <ion-list lines="none" class="border_bottom">
+              <ion-menu-toggle auto-hide="false" >
+                <ion-item (click)="go_page ('home', 0)">
+                  <div class="div_verde" *ngIf="selected === 0"></div>
+                  <ion-icon name="home-outline" class="ion-margin-end"></ion-icon>
+                  <ion-label class="color_menu">Inicio</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+
+              <div></div>
+              <ion-menu-toggle auto-hide="false" >
+                <ion-item (click)="go_page ('mi-cuenta', 1)">
+                  <div class="div_verde" *ngIf="selected === 1"></div>
+                  <img src="assets/img/Ycb9IP.tif.png" class="ion-margin-end img_start">
+                  <ion-label class="color_menu">Mi cuenta</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+      
+              <div></div>
+              <ion-menu-toggle auto-hide="false" >
+                <ion-item (click)="go_page ('pedido-resumen', 2)">
+                  <div class="div_verde" *ngIf="selected === 2"></div>
+                  <img src="assets/img/UB2Z1s.tif.png" class="ion-margin-end img_start">
+                  <ion-label class="color_menu">Resumen de pedido</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+      
+              <div></div>
+              <ion-menu-toggle auto-hide="false" >
+                <ion-item>
+                  <div class="div_verde" *ngIf="selected === 3"></div>
+                  <img src="assets/img/Grupo49.png" class="ion-margin-end img_start">
+                  <ion-label class="color_menu">Mi Lista de compras (Via Mart)</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+      
+              <div></div>
+              <ion-menu-toggle auto-hide="false" >
+                <ion-item (click)="go_page ('favoritos', 4)">
+                  <div class="div_verde" *ngIf="selected === 4"></div>
+                  <img src="assets/img/2Pm75e.tif.png" class="ion-margin-end img_start">
+                  <ion-label class="color_menu">Mis favoritos</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+      
+              <div></div>
+              <!--<ion-menu-toggle auto-hide="false" >
+                <ion-item (click)="limpiar_cache ()">
+                  <img src="assets/img/Grupo52.png" class="ion-margin-end img_start">
+                  <ion-label class="color_menu">Limpiar cache</ion-label>
+                </ion-item>
+              </ion-menu-toggle>-->
+
+              <ion-menu-toggle auto-hide="false" >
+                <ion-item (click)="go_page ('historial-pedidos', 5)">
+                  <div class="div_verde" *ngIf="selected === 5"></div>
+                  <!--<img src="assets/img/Grupo52.png" class="ion-margin-end">-->
+                  <ion-icon name="time-outline"></ion-icon>
+                  <ion-label class="color_menu left_menu">Historial de pedidos</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+      
+              <div></div>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid> 
+      <ion-button class="btn_salir" (click)="salir ()">
+        <ion-icon name="power-outline" class="ion-margin-end"></ion-icon>
+        Salir
+      </ion-button>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="content1"></ion-router-outlet>
+</ion-app>

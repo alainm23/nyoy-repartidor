@@ -1,0 +1,24 @@
+<ion-header mode="ios">
+  <ion-toolbar>
+    <ion-title>Ruteo de entregas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="img_mapa">
+    <div #map id="map"></div>
+  </div>
+
+  <div style="position: absolute; bottom: 0.5rem; width: 100%;">
+    <ion-button mode="ios" class="btn_listo" expand="block" (click)="procesar ()">
+      {{ action.nombre }}
+      {{ action.usuario_nombre }}
+    </ion-button>
+  </div>
+</ion-content>
+
+<!-- <ion-footer mode="ios">
+  <ion-toolbar>
+    
+  </ion-toolbar>
+</ion-footer> -->
